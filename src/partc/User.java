@@ -1,6 +1,7 @@
 //package partc;
 
 public class User {
+	//these are the attributes of User..these value defines the users
 	private String id;
 	private String password;
 	private String name;
@@ -9,6 +10,7 @@ public class User {
 
 	private int type;
 
+	//this is parameterized constructor with 4 attributes
 	User(String id,String password,String name,String email){
 		this.setId(id);
 		this.setPassword(password);
@@ -16,10 +18,12 @@ public class User {
 		this.setEmail(email);
 	}
 
+	//and this is a null one
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
 
+	//Afterwards are getters and setters(simple)
 	public String getId() {
 		return id;
 	}
@@ -58,11 +62,11 @@ public class User {
 	}
 
 	public void setBalance(double balance) {
-		this.balance =this.balance+ balance;
+		this.balance =this.balance+ balance; //add new deposit_balance with previous balance
 	}
 
 	public void show_my_balance(){
-		System.out.println("Your current balance is "+balance);
+		System.out.println("Current balance is: "+balance);
 	}
 
 
